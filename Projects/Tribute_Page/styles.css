@@ -1,0 +1,91 @@
+/*Selectores de ID*/
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title, #img-caption, #headline {
+    text-align: center;
+}
+
+#img-caption {
+    margin-top: 1em;
+}
+
+#title {
+    font-size: 2.5em;
+    font-family: 'Quicksand', cursive;
+    font-weight:900;
+}
+
+#tribute-info {
+    background-color: #EEEEEE;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/*Selectores de tipo*/
+html {
+    background-color: white;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+
+footer {
+    background-color: #EEEEEE;
+    padding: 2vh;
+}
+
+ul {
+    max-width: 40vw;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+blockquote {
+    font-style: italic;
+    max-width: 50vw;
+    margin: 0 auto 0 auto;
+    text-align: left;
+  }
+/*Selectores de clase*/
+.subject-section {
+    background-color: #EEEEEE;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.final-text {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    ul {
+        max-width: 75vw;
+    }
+
+    blockquote {
+        max-width: 70vw;
+      }
+}
+
+@media (max-width: 900px) {
+    ul {
+        max-width: 60vw;
+    }
+
+    blockquote {
+        max-width: 60vw;
+      }
+}
