@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+main {
+    margin-top: 75px;
+}
+
+header {
+    width: 100%;
+    min-height: 5%;
+    padding: 1% 2%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: rgb(0, 217, 255);
+}
+
+#header-img {
+    width: 30%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 7.5px;
+}
+
+#form {
+    margin: 2% auto;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+#submit {
+    background-color: orange;
+    color: black;
+    display: block;
+    padding: 10px 25px;
+    margin: 15px auto;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin: 0px auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+input[type="email"] {
+    width: 40%;
+    font-size: 1.3em;
+}
+
+/*Pricing*/
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
+    gap: 40px;
+    width: calc(90% / 3);
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.product>.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px 10px 0 0;
+}
+
+ol>li,
+li {
+    list-style: none;
+}
+
+#howitworks {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#video {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>span {
+    margin-top: 2.5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+footer>ul>li {
+    margin: 0px;
+}
+
+footer>ul>li>a {
+    color: #4d27ca;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.flex-item {
+    width: calc(90% / 3);
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 30px 15px;
+    gap: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    input[type="email"] {
+        width: 80%;
+        font-size: 1.3em;
+    }
+}
