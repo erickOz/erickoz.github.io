@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Notificación de Vencimiento - Google Workspace</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+        body {margin:0; padding:0; background-color:#f1f3f4; font-family:'Roboto', Arial, sans-serif;}
+        table, td {border-collapse: collapse;}
+        img {border:0; display:block;}
+
+        .summary-table {width:100%; border:1px solid #dadce0; margin:20px 0; background:#fff;}
+        .summary-table td {padding:14px 16px; border-bottom:1px solid #f1f3f4; font-size:16px; color:#3c4043;}
+        .summary-label {font-weight:500; color:#5f6368; width:40%; background:#f8f9fa;}
+        .summary-value {font-weight:400; color:#202124;}
+
+        .step-circle {width:28px; height:28px; border-radius:50%; line-height:28px; text-align:center; font-size:14px; font-weight:bold;}
+        .step-active {background:#1a73e8; color:#fff; border:2px solid #1a73e8;}
+        .step-pending {background:#fff; color:#1a73e8; border:2px solid #1a73e8;}
+        .step-future {background:#f1f3f4; color:#9aa0a6; border:2px solid #dadce0;}
+        .step-line {width:40px; height:2px; background:#dadce0;}
+        .step-line.active {background:#1a73e8;}
+        .step-label {font-size:12px; color:#5f6368; margin-top:6px; line-height:1.3;}
+
+        @media only screen and (max-width:600px) {
+            .summary-table td {padding:12px; font-size:15px;}
+            .step-circle {width:24px; height:24px; line-height:24px; font-size:12px;}
+            .step-label {font-size:11px;}
+            h2 {font-size:20px;}
+        }
+    </style>
+</head>
+
+<body bgcolor="#f1f3f4">
+<section>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+
+                <table width="600" style="background:#fff; border:1px solid #dadce0; border-radius:8px; overflow:hidden;" cellpadding="0" cellspacing="0">
+
+                    <!-- Header con Partner Badge + Hype Digital -->
+                    <tr>
+                        <td style="padding: 20px 30px; border-bottom: 1px solid #f1f3f4;">
+                            <table width="100%">
+                                <tr>
+                                    <td align="left" width="50%">
+                                        <img src="https://hype-digital.in/assets/google-partner-badge.png" width="110" alt="Google Cloud Partner">
+                                    </td>
+                                    <td align="right" width="50%">
+                                        <img src="https://erickoz.github.io/public/assets/imgs/Logo-HD-2x_v1.png" width="150" alt="Hype Digital">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Título -->
+                    <tr>
+                        <td align="center" style="padding:30px 30px 20px 30px; border-bottom:1px solid #f1f3f4;">
+                            <h2 style="font-size:24px; color:#202124; margin:0;">Notificación de Vencimiento</h2>
+                            <p style="font-size:15px; color:#5f6368; margin-top:8px;">Google Workspace</p>
+                        </td>
+                    </tr>
+
+                    <!-- Contenido -->
+                    <tr>
+                        <td style="padding:30px;">
+
+                            <p style="font-size:17px; line-height:1.6; color:#3c4043;">
+                                Estimado Cliente: <strong>Nombre del Cliente</strong><br><br>
+                                Le informamos que su servicio de licencias de Google Workspace está próximo a vencer. Para asegurar la continuidad de sus operaciones, hemos preparado la siguiente información.
+                            </p>
+
+                            <!-- Stepper -->
+                            <table width="100%" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <div class="step-circle step-active">&#10003;</div>
+                                        <div class="step-label" style="font-weight:600; color:#1a73e8;">Notificación<br>Vencimiento</div>
+                                    </td>
+                                    <td align="center" style="padding-top:12px;">
+                                        <div class="step-line active"></div>
+                                    </td>
+                                    <td align="center">
+                                        <div class="step-circle step-pending">2</div>
+                                        <div class="step-label">Confirmación<br>Renovación</div>
+                                    </td>
+                                    <td align="center" style="padding-top:12px;">
+                                        <div class="step-line"></div>
+                                    </td>
+                                    <td align="center">
+                                        <div class="step-circle step-future">3</div>
+                                        <div class="step-label">Pago y<br>Facturación</div>
+                                    </td>
+                                    <td align="center" style="padding-top:12px;">
+                                        <div class="step-line"></div>
+                                    </td>
+                                    <td align="center">
+                                        <div class="step-circle step-future">4</div>
+                                        <div class="step-label">Renovación<br>Completada</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Resumen -->
+                            <table class="summary-table">
+                                <tr><td class="summary-label">Empresa / Cliente</td><td class="summary-value">Nombre Empresa</td></tr>
+                                <tr><td class="summary-label">Dominio</td><td class="summary-value">dominio.com</td></tr>
+                                <tr><td class="summary-label">Plan Actual</td><td class="summary-value">Business Starter</td></tr>
+                                <tr><td class="summary-label">Licencias</td><td class="summary-value">X usuarios</td></tr>
+                                <tr><td class="summary-label">Fecha Vencimiento</td><td class="summary-value" style="color:#d93025; font-weight:600;">dd/mm/2025</td></tr>
+                            </table>
+
+                            <p style="font-size:14px; color:#5f6368; font-style:italic; text-align:center; margin:20px 0;">
+                                * Revise la cotización adjunta para ver precios, impuestos y desglose detallado.
+                            </p>
+
+                            <p style="font-size:17px; line-height:1.6; color:#3c4043;">
+                                Para procesar su renovación, por favor envíenos la <strong>orden de compra</strong> o el <strong>voucher de pago</strong> respondiendo a este correo.
+                            </p>
+
+                            <p style="font-size:16px; color:#3c4043; margin-top:25px;">
+                                Para consultas sobre precios o descuentos:  
+                                <strong>e.zea@hype-digital.in</strong>
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" style="padding:25px 30px; border-top:1px solid #f1f3f4; font-size:11px; color:#999;">
+                            © 2025 Hype Digital – Partner de Google Workspace<br>
+                            Área de Ventas – Renovaciones<br>
+                            Usted recibe este correo como administrador o contacto de facturación del servicio.
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>

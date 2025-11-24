@@ -1,0 +1,213 @@
+<!doctype html>
+<html xmlns:v="urn:schemas-microsoft-com:vml" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificación de Vencimiento</title>
+    <style type="text/css">
+        /* Fuentes de Google usadas en la plantilla original */
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+        /* Estilos base de la plantilla de Google */
+        body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: none; margin: 0; padding: 0; background-color: #f1f3f4; font-family: 'Roboto', Arial, sans-serif; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border-collapse: collapse; }
+        img { -ms-interpolation-mode: bicubic; text-decoration: none; outline: none; border: none; }
+        p { margin: 0; padding: 0; }
+        a { text-decoration: none; color: #4285f4; }
+        
+        /* Estilos específicos del contenido inyectado */
+        .stepper-container {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .step-circle {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .step-active { background-color: #1a73e8; color: #ffffff; border: 2px solid #1a73e8; }
+        .step-pending { background-color: #ffffff; color: #1a73e8; border: 2px solid #1a73e8; }
+        .step-future { background-color: #f1f3f4; color: #9aa0a6; border: 2px solid #dadce0; }
+        
+        .step-line {
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background-color: #dadce0;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+        .step-line.active { background-color: #1a73e8; }
+
+        .step-label {
+            font-size: 10px;
+            color: #5f6368;
+            display: block;
+            width: 70px; /* Ancho fijo para centrar texto bajo el circulo */
+            margin: 0 auto;
+            line-height: 1.2;
+        }
+        .step-label.active { color: #202124; font-weight: 700; }
+
+        .summary-table {
+            width: 100%;
+            border: 1px solid #dadce0;
+            margin: 20px 0;
+            background-color: #ffffff;
+        }
+        .summary-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f1f3f4;
+            font-size: 14px;
+            color: #3c4043;
+        }
+        .summary-label { font-weight: 500; color: #5f6368; width: 40%; background-color: #f8f9fa; }
+        .summary-value { font-weight: 400; color: #202124; }
+        .total-row td { border-top: 2px solid #1a73e8; font-weight: 700; font-size: 16px; color: #1a73e8; }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff !important;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+        }
+
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+            .step-line { width: 15px; } /* Líneas más cortas en móvil */
+            .step-label { font-size: 9px; width: 50px; }
+            .summary-table td { padding: 10px; font-size: 13px; }
+            .wrapper-table { width: 100% !important; }
+            .content-padding { padding: 15px !important; }
+        }
+    </style>
+</head>
+<body bgcolor="#f1f3f4">
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1f3f4">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                
+                <table class="wrapper-table" width="600" border="0" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border: 1px solid #dadce0; border-radius: 8px; overflow: hidden;">
+                    
+                    <tr>
+                        <td align="center" style="padding: 30px 30px 20px 30px; border-bottom: 1px solid #f1f3f4;">
+                            <h2 style="font-family: 'Google Sans', Roboto, Arial, sans-serif; font-size: 22px; color: #202124; margin: 0;">
+                                Notificación de Vencimiento
+                            </h2>
+                            <p style="font-size: 14px; color: #5f6368; margin-top: 5px;">Google Workspace</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="content-padding" style="padding: 30px;">
+                            
+                            <p style="font-size: 15px; line-height: 1.5; color: #3c4043; margin-bottom: 25px;">
+                                Estimado cliente, <br><br>
+                                Le informamos que su servicio de licencias de Google Workspace está próximo a vencer. Para asegurar la continuidad de sus operaciones, hemos preparado la siguiente información.
+                            </p>
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 30px;">
+                                <tr>
+                                    <td align="center" valign="top" width="25%">
+                                        <div class="step-circle step-active">&#10003;</div> <span class="step-label active">Notificación<br>Vencimiento</span>
+                                    </td>
+                                    <td align="center" valign="top" style="padding-top: 10px;">
+                                        <div class="step-line active"></div>
+                                    </td>
+                                    <td align="center" valign="top" width="25%">
+                                        <div class="step-circle step-pending">2</div>
+                                        <span class="step-label" style="color: #1a73e8; font-weight:600;">Confirmación<br>Renovación</span>
+                                    </td>
+                                    <td align="center" valign="top" style="padding-top: 10px;">
+                                        <div class="step-line"></div>
+                                    </td>
+                                    <td align="center" valign="top" width="25%">
+                                        <div class="step-circle step-future">3</div>
+                                        <span class="step-label">Pago y<br>Facturación</span>
+                                    </td>
+                                    <td align="center" valign="top" style="padding-top: 10px;">
+                                        <div class="step-line"></div>
+                                    </td>
+                                    <td align="center" valign="top" width="25%">
+                                        <div class="step-circle step-future">4</div>
+                                        <span class="step-label">Renovación<br>Completada</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="summary-table" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="summary-label">Empresa / Cliente</td>
+                                    <td class="summary-value">[Nombre Empresa]</td>
+                                </tr>
+                                <tr>
+                                    <td class="summary-label">Dominio</td>
+                                    <td class="summary-value">empresa-cliente.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="summary-label">Plan Actual</td>
+                                    <td class="summary-value">Google Workspace Business Standard</td>
+                                </tr>
+                                <tr>
+                                    <td class="summary-label">Licencias</td>
+                                    <td class="summary-value">15 usuarios</td>
+                                </tr>
+                                <tr>
+                                    <td class="summary-label">Fecha Vencimiento</td>
+                                    <td class="summary-value" style="color: #d93025; font-weight: 600;">15 de Diciembre, 2025</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total a Pagar</td>
+                                    <td>$ X,XXX.XX USD <span style="font-size:10px; font-weight:normal; color:#5f6368;">(Inc. Impuestos)</span></td>
+                                </tr>
+                            </table>
+                            
+                            <p style="font-size: 12px; color: #5f6368; font-style: italic; margin-bottom: 25px; text-align: center;">
+                                * Encuentra el desglose detallado y formal en la cotización PDF adjunta a este correo.
+                            </p>
+
+                            <div style="text-align: center;">
+                                <a href="mailto:renovaciones@tuempresa.com?subject=Confirmación%20Renovación%20Google%20Workspace&body=Hola,%20confirmo%20la%20renovación%20del%20servicio%20según%20la%20cotización%20recibida." class="cta-button">
+                                    CONFIRMAR RENOVACIÓN AHORA
+                                </a>
+                                <p style="font-size: 13px; color: #5f6368; margin-top: 15px;">
+                                    O responde a este correo con tu Orden de Compra.
+                                </p>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#f8f9fa" style="padding: 20px 30px; border-top: 1px solid #f1f3f4; text-align: center;">
+                            <p style="font-size: 11px; color: #9aa0a6; line-height: 1.5;">
+                                Ha recibido este correo porque es el administrador o contacto de facturación de la cuenta.<br>
+                                © 2025 Tu Empresa de Tecnología. Todos los derechos reservados.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <div style="height: 40px; font-size: 0; line-height: 0;">&nbsp;</div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
