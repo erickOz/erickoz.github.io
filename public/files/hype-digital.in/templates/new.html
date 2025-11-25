@@ -19,14 +19,14 @@
 
         /* --- COMPONENTES --- */
         .stepper-table { width: 100%; margin: 25px 0; }
-        .step-circle { width: 28px; height: 28px; border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold; font-size: 14px; margin: 0 auto 8px auto; }
+        .step-circle { width: 28px; height: 28px; border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold; font-size: 14px; margin: 0 auto 8px auto; display: flex; align-items: center; justify-content: center; }
         .step-line { height: 3px; width: 100%; background-color: #e0e0e0; border-radius: 2px; }
         .active-line { background-color: #1a73e8; }
         
         /* Colores Stepper */
         .bg-active { background-color: #1a73e8; color: #ffffff; }
-        .bg-pending { background-color: #ffffff; color: #1a73e8; border: 2px solid #1a73e8; line-height: 24px; /* ajuste por borde */ }
-        .bg-future { background-color: #f1f3f4; color: #9aa0a6; border: 2px solid #dadce0; line-height: 24px; }
+        .bg-pending { background-color: #ffffff; color: #1a73e8; border: 2px solid #1a73e8; }
+        .bg-future { background-color: #f1f3f4; color: #9aa0a6; border: 2px solid #dadce0; }
 
         .summary-table { width: 100%; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; margin-bottom: 25px; }
         .summary-header { background-color: #f8f9fa; color: #5f6368; font-weight: 600; font-size: 13px; padding: 12px 15px; width: 35%; border-bottom: 1px solid #f1f3f4; }
@@ -46,10 +46,11 @@
 <body style="background-color: #f5f5f5;">
 
 <center class="wrapper">
-    <table class="main-card" width="600" cellpadding="0" cellspacing="0">
+    <table class="main-card"  width="600" cellpadding="0" cellspacing="0"
+        style="background-color:#ffffff; border:1px solid #dadce0; border-radius:8px; margin:0 auto;">
         
         <tr>
-            <td style="padding: 25px 30px; border-bottom: 1px solid #f1f3f4; background-color: #ffffff;">
+            <td style="padding: 10px 20px; border-bottom: 1px solid #f1f3f4; background-color: #ffffff;">
                 <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                         <td align="left" valign="middle">
@@ -64,30 +65,31 @@
         </tr>
 
         <tr>
-            <td class="content-padding" style="padding: 35px 40px; background-color: #ffffff;">
+            <td class="content-padding" style="padding: 20px 25px; background-color: #ffffff;">
                 
-                <h1 style="color: #202124; font-family: 'Google Sans', Roboto, sans-serif; font-size: 24px; font-weight: 400; margin: 0 0 20px 0;">
+                <h1 style="color: #444; font-family: 'Google Sans', Roboto, sans-serif; font-size: 24px; font-weight: 400; margin: 0 0 20px 0;">
                     Notificación de Vencimiento
                 </h1>
 
-                <p style="font-size: 16px; color: #3c4043; line-height: 1.5;">
-                    Estimado cliente,<br><br>
-                    Le informamos que su servicio de <strong>Google Workspace</strong> está próximo a vencer. Para asegurar la continuidad de sus operaciones, hemos preparado la siguiente información:
+                <p style="font-size: 16px; color: #67686b; line-height: 1.5;">
+                    Estimado cliente<br><br>
+                    Le informamos que su servicio de
+                    <span style="color:rgb(66,133,244)">G</span><span style="color:rgb(234,67,54)">o</span><span style="color:rgb(251,189,5)">o</span><span style="color:rgb(66,133,244)">g</span><span style="color:rgb(52,168,83)">l</span><span style="color:rgb(234,67,54)">e</span> <strong>Workspace</strong> está próximo a vencer. Para asegurar la continuidad de sus operaciones, hemos preparado la siguiente información:
                 </p>
 
                 <table class="stepper-table" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td width="20%" align="center" valign="top">
+                        <td width="20%" align="center" valign="center">
                             <div class="step-circle bg-active">✓</div>
-                            <span class="step-text" style="font-size: 11px; font-weight: bold; color: #202124; display: block;">Notificación<br>Enviada</span>
+                            <span class="step-text" style="font-size: 11px; font-weight: bold; color: #67686b; display: block;">Notificación de<br>Vencimiento</span>
                         </td>
                         <td width="6%" valign="top" style="padding-top: 13px;">
                             <div class="step-line active-line"></div>
                         </td>
                         
-                        <td width="20%" align="center" valign="top">
+                        <td width="20%" align="center" valign="center">
                             <div class="step-circle bg-pending">2</div>
-                            <span class="step-text" style="font-size: 11px; font-weight: bold; color: #1a73e8; display: block;">Confirmar<br>Renovación</span>
+                            <span class="step-text" style="font-size: 11px; font-weight: bold; color: #1a73e8; display: block;">Confirmación<br>de Renovación</span>
                         </td>
                         <td width="6%" valign="top" style="padding-top: 13px;">
                             <div class="step-line"></div>
@@ -95,7 +97,7 @@
 
                         <td width="20%" align="center" valign="top">
                             <div class="step-circle bg-future">3</div>
-                            <span class="step-text" style="font-size: 11px; color: #9aa0a6; display: block;">Pago y<br>Factura</span>
+                            <span class="step-text" style="font-size: 11px; color: #9aa0a6; display: block;">Pago y<br>Facturación</span>
                         </td>
                         <td width="6%" valign="top" style="padding-top: 13px;">
                             <div class="step-line"></div>
@@ -103,7 +105,7 @@
 
                         <td width="20%" align="center" valign="top">
                             <div class="step-circle bg-future">4</div>
-                            <span class="step-text" style="font-size: 11px; color: #9aa0a6; display: block;">Renovación<br>Lista</span>
+                            <span class="step-text" style="font-size: 11px; color: #9aa0a6; display: block;">Renovación<br>Completada</span>
                         </td>
                     </tr>
                 </table>
@@ -112,61 +114,62 @@
                 <table class="summary-table" cellpadding="0" cellspacing="0">
                     <tr>
                         <td class="summary-header">Empresa</td>
-                        <td class="summary-data">[Nombre Empresa]</td>
+                        <td class="summary-data" style="color: #666;">Grupo Shanoc SA</td>
                     </tr>
                     <tr>
                         <td class="summary-header">Dominio</td>
-                        <td class="summary-data">empresa-cliente.com</td>
+                        <td class="summary-data" style="color: #555;">gruposhanoc.com</td>
                     </tr>
                     <tr>
                         <td class="summary-header">Plan</td>
-                        <td class="summary-data">Business Standard</td>
+                        <td class="summary-data" style="color: #666;">Business Starter</td>
                     </tr>
                     <tr>
                         <td class="summary-header">Licencias</td>
-                        <td class="summary-data">15 usuarios</td>
+                        <td class="summary-data" style="color: #666;">63 usuarios</td>
                     </tr>
                     <tr>
                         <td class="summary-header">Vencimiento</td>
-                        <td class="summary-data" style="color: #d93025; font-weight: 700;">15 de Diciembre, 2025</td>
+                        <td class="summary-data" style="color: #b0382f; font-weight: 700;">09 de Diciembre, 2025</td>
                     </tr>
                     <tr>
                         <td class="summary-header" style="background-color: #e8f0fe; color: #1a73e8; border-top: 2px solid #1a73e8;">Total</td>
-                        <td class="summary-data" style="background-color: #e8f0fe; color: #1a73e8; font-weight: 700; border-top: 2px solid #1a73e8;">$ X,XXX.XX USD</td>
+                        <td class="summary-data" style="background-color: #e8f0fe; color: #1a73e8; font-weight: 700; border-top: 2px solid #1a73e8;">$ 5,980.89</td>
                     </tr>
                 </table>
 
                 <div style="text-align: center; margin-top: 30px;">
                     <p style="font-size: 13px; color: #5f6368; font-style: italic;">
-                        * Se adjunta la cotización formal en PDF con el detalle de impuestos.
+                        * Se adjunta la cotización formal en PDF con el desglose detallado.
                     </p>
-                    <a href="mailto:renovaciones@hype/digital.in?subject=Confirmación%20Renovación%20[Cliente]" style="background-color: #1a73e8; color: #ffffff; padding: 12px 24px; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; margin-top: 10px; box-shadow: 0 1px 2px rgba(60,64,67,0.3);">
+                    <a href="mailto:renovaciones@hype-digital.in?subject=RE:%20Notificación%20de%20Vencimiento%20-%20Confirmación%20Renovación%20Grupo%20Shanoc%20SA" style="background-color: #1a73e8; color: #ffffff; padding: 12px 24px; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; margin-top: 10px; box-shadow: 0 1px 2px rgba(60,64,67,0.3);">
                         CONFIRMAR RENOVACIÓN
                     </a>
-                    <p style="font-size: 13px; color: #5f6368; margin-top: 20px;">
-                        O responda a este correo adjuntando su Orden de Compra.
+                    <p style="font-size: 13px; color: #666; margin-top: 20px;">
+                        O responda a este correo adjuntando su Orden de Compra / Voucher de Pago.
                     </p>
+                    <p style="font-size: 13px; color: #666;margin:0px;padding:0px">Para consultas sobre los precios y descuentos contactar a su comercial asignado: <a href="mailto:e.zea@hype-digital.in" style="color:rgb(46,154,164)">e.zea@hype-digital.in</a></p>
                 </div>
-
+                <br/>
             </td>
         </tr>
 
         <tr>
-            <td style="background-color: #f8f9fa; padding: 30px 40px; border-top: 1px solid #f1f3f4; text-align: center;">
+            <td style="background-color: #f8f9fa; padding: 30px 40px; border-top: 1px solid #393f42; text-align: center;">
                 
-                <p class="footer-text" style="font-size: 12px; color: #5f6368; line-height: 1.6; margin-bottom: 20px;">
+                <p class="footer-text" style="font-size: 11px; color: #888; line-height: 1.6; margin-bottom: 20px;">
                     Enviado por el <strong>Área de Ventas - Sección Renovaciones</strong><br>
                     Recibiste este correo como parte del servicio de Google Workspace contratado.
                 </p>
 
-                <p class="footer-text" style="font-size: 12px; color: #5f6368; margin-bottom: 20px;">
+                <p class="footer-text" style="font-size: 11px; color: #999; margin-bottom: 20px;">
                     Este correo y su contenido están sujetos a los 
                     <a href="https://policies.google.com/terms" style="color: #1a73e8;">Términos de Servicio de Google</a> 
                     y a la 
                     <a href="https://policies.google.com/privacy" style="color: #1a73e8;">Política de Privacidad de Google</a>.
                 </p>
 
-                <p class="footer-text" style="font-size: 11px; color: #9aa0a6;">
+                <p class="footer-text" style="font-size: 10px; color: #999;">
                     © 2025 Hype Digital, Lima - Perú, ZIP 15084
                     <br/>Google Cloud Partner
                 </p>
